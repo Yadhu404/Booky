@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="name">
+            <img src="Images/book.png" alt="logo"/>
+            <span>Booky</span>
+        </div>
+        <div class="search-lo_si">
+            <div class="search-space">
+                <input type="text" placeholder="🔍︎ Search using name, category..." onchange="GetSearchValue(this.value)"/>
+                <input type="button" value="🔍︎" onclick="Search()"/>
+            </div>
+            <div class="lo-si">
+                <input type="button" id = "login" value="Log in" />
+                <input type="button" id = "signin" value="Sign in" />
+            </div>
+        </div>
+    </header>
+    
+    <section>
+        <img src="Icons/play.png" id="left" alt="left-arrow">
+        <div class="category">
+            <input type="button" onclick="FetchBookData(this.value)" value="All" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Action and Adventure" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Biography" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Classic Fiction" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Comedy" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Contemporary Fiction" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Cookbooks" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Crime and Mystery" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Dystopian" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Fantasy" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Graphic Novels" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Historical Fiction" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Historical Nonfiction" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Horror" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Humor" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Literary Fiction" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Magical Realism" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Memoir" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Poetry" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Religion and Philosophy" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Romance" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Science Fiction" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Self-Help" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Thriller" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Thriller" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Young Adult" />
+            <input type="button" onclick="FetchBookData(this.value)" value="Westerns " />
+        </div>
+        <img src="Icons/play.png" alt="left-arrow">
+    </section>
+
+    <div class="show-cat">
+        <img src="Icons/angle-double-small-right.png" alt="arrow">
+        <span id="cat-name"></span>
+        <!-- <img src="Icons/angle-double-small-right.png" alt="arrow"> -->
+    </div>
+
+    <main id="main">
+        <!-- <div class="no-book">
+            <img src="Images/no-books.png" alt="no books"/>
+            <p>No books found!</p>
+        </div> -->
+        <!-- <div class="card">
+            <div class="book-pic">
+                <img src="Images/books.png" alt="book">
+            </div>
+            <div class = "details">
+                <p>Name of the book</p>
+                <div class="inner-det">
+                    <pre>Category  <p>Horror</p></pre>
+                    <pre>Price         <p>$500</p></pre>
+                </div>
+                <div class="btns">
+                    <div class="viewbttn">
+                        <span id = "view">
+                            <img src="Icons/eye.png" alt="buy">
+                            <p>View</p>
+                        </span>
+                    </div>
+                    <div class="impt-bttn">
+                        <span id = "buy">
+                            <img src="Icons/shopping-bag.png" alt="buy">
+                            <p>Buy</p>
+                        </span>
+                        <span id = "cart">
+                            <img src="Icons/shopping-cart-add.png" alt="cart">
+                            <p>Add to cart</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
