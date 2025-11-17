@@ -28,6 +28,10 @@ let Search = () => {
 let isBookFound = false;
 let bookCount = 0;
 let DisplayBooks = (bookReference) =>{
+    mainDiv.style.display = 'grid';
+    mainDiv.style.justifyContent = 'center';
+    mainDiv.style.gridTemplateColumns= '280px 280px 280px 280px 280px';
+
     listofBooks.forEach(card => {
 
 
@@ -76,6 +80,10 @@ let DisplayBooks = (bookReference) =>{
     })
     ShowCategory(bookReference);
     if(!isBookFound){
+        mainDiv.style.display = 'flex';
+        mainDiv.style.justifyContent = 'center';
+        mainDiv.style.alignItems = 'center';
+
         const newDiv = document.createElement('div');
         newDiv.classList.add('no-book');
     
