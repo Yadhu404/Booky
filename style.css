@@ -348,3 +348,129 @@ main .card .details
     grid-template-columns: 250px;
     }
 }
+
+/*Expand Book View*/
+.expand-card
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.768);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+.expand-card .big-card
+{
+    background-color: rgb(255, 255, 255);
+    width: 80%;    
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px 1px black;
+}
+/* .big-card .book-pic
+{
+
+} */
+.big-card .det
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.det .close
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.close p
+{
+    font-size: 40px;
+    font-weight: 600;
+}
+.close img
+{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.close img:hover
+{
+    transition: 0.6s;
+    transform: rotate(30deg);
+}
+.det .para p
+{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.det .cat-pri
+{
+    border-top: 1px solid;
+    /* border-bottom: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 10px 0;
+}
+.cat-pri pre
+{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+.cat-pri pre p
+{
+    font-size: 32px;
+}
+.det .search-with-cat span
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+    cursor: pointer;
+}
+.det .search-with-cat span:hover p
+{
+    text-decoration: underline;
+}
+    .search-with-cat span img
+    {
+        height: 20px;
+        width: 20px;
+    }
+.det .impt-bttn-1
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.impt-bttn-1 span img
+{
+    height: 40px;
+    width: 40px;
+}
+.impt-bttn-1 span
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color2);
+    border-radius: 6px;
+    padding: 15px;
+    gap: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.impt-bttn-1 span:hover
+{
+    background-color: #374650;
+}

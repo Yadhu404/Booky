@@ -1,59 +1,69 @@
 [
     {
+        "id": 0,
         "imgurl": "Images/books.png",
         "name": "Book 1",
         "category": "Horror",
         "price": "500"
     },
     {
+        "id": 1,
         "imgurl": "Images/books.png",
         "name": "Book 2",
         "category": "Biography",
         "price": "500"
     },
     {
+        "id": 2,
         "imgurl": "Images/books.png",
         "name": "Book 3",
         "category": "Comedy",
         "price": "500"
     },
     {
+        "id": 3,
         "imgurl": "Images/books.png",
         "name": "Book 4",
         "category": "Biography",
         "price": "500"
     },
     {
+        "id": 4,
         "imgurl": "Images/books.png",
         "name": "Book 5",
         "category": "Comedy",
         "price": "500"
     },
     {
+        "id": 5,
         "imgurl": "Images/books.png",
         "name": "Book 6",
         "category": "Biography",
         "price": "500"
     },
     {
+        "id": 6,
         "imgurl": "Images/books.png",
         "name": "Name of th book",
         "category": "Horror",
         "price": "500"
     },
     {
+        "id": 7,
         "imgurl": "Images/books.png",
         "name": "Name of th book",
         "category": "Comedy",
         "price": "500"
     },
     {
+        "id": 8,
         "imgurl": "Images/books.png",
         "name": "Name of th book",
         "category": "Horror",
         "price": "500"
     },
     {
+        "id": 9,
         "imgurl": "Images/books.png",
         "name": "Name of th book",
         "category": "Comedy",

@@ -55,7 +55,7 @@ let DisplayBooks = (bookReference) =>{
                         </div>
                         <div class="btns">
                             <div class="viewbttn">
-                            <span id = "view">
+                            <span id = "view" onclick="ExpandBook('${card.imgurl}', '${card.name}', '${card.category}', ${card.price})">
                                 <img src="Icons/eye.png" alt="buy">
                                 <p>View</p>
                             </span>
@@ -103,4 +103,75 @@ let DisplayBooks = (bookReference) =>{
 let showCat = document.getElementById('cat-name');
 let ShowCategory = (cat) => {
     showCat.innerHTML = `${cat} ( ${bookCount} )`;
+}
+
+//Shows a tab that contains more details about the book
+let body = document.body;
+let ExpandBook = (bookUrl, bookName, category, price) => {
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('expand-card');
+
+
+    newDiv.innerHTML = 
+    `
+    <div class="big-card">
+            <div class="book-pic">
+                <img src="${bookUrl}" alt="book" />
+            </div>
+            <div class="det">
+                <div class="close">
+                    <p>${bookName}</p>
+                    <img src="Icons/close.png" alt="close" onclick = "CloseBookViewTab()">
+                </div>
+                <div class="para">
+                    <p>
+                        The book had appeared on the old library shelf as if it had grown there overnight, 
+                        its faded green cover whispering of hidden adventures. No author was listed, and 
+                        the title—The Clockmaker's Whispers—was embossed in gold that shimmered oddly in 
+                        dim light. Anyone who picked it up claimed the pages felt warm, almost alive, and 
+                        the story inside seemed to shift each time it was read. Some said the book chose its 
+                        reader, revealing different truths to different hands, while others insisted it was 
+                        merely an eccentric relic. But everyone agreed on one thing: once you opened it, it 
+                        was almost impossible to put it down.
+                    </p>
+                </div>
+                <div class="cat-pri">
+                    <pre>Category   <p>${category}</p></pre>
+                    <pre>Price   <p>$${price}</p></pre>
+                </div>
+                <div class="search-with-cat">
+                    <span onclick = 'BookViewTabCloseEvent("${category}")'>
+                        <p>Search books this category</p>
+                        <img src="Icons/right-arrow.png" alt="rightarrow"/>
+                    </span>
+                </div>
+                <div class="impt-bttn-1">
+                    <span id = "buy">
+                        <img src="Icons/shopping-bag.png" alt="buy">
+                        <p>Buy</p>
+                    </span>
+                    <span id = "rcart">
+                        <img src="Icons/shopping-cart-add.png" alt="cart">
+                        <p>Add to cart</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    `;
+
+    body.appendChild(newDiv);
+}
+
+let searchBox = document.getElementById('search-box');
+let BookViewTabCloseEvent = (category) => {
+    CloseBookViewTab();
+    FetchBookData(category);
+    searchBox.value = category;
+}
+
+let CloseBookViewTab = () => {
+    let tab = document.getElementsByClassName('expand-card')[0];
+    if(tab){
+        body.removeChild(tab);
+    }
 }

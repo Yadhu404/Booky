@@ -14,7 +14,7 @@
         </div>
         <div class="search-lo_si">
             <div class="search-space">
-                <input type="text" placeholder="🔍︎ Search using name, category..." onchange="GetSearchValue(this.value)"/>
+                <input type="text" id="search-box" placeholder="🔍︎ Search using name, category..." onchange="GetSearchValue(this.value)"/>
                 <input type="button" value="🔍︎" onclick="Search()"/>
             </div>
             <div class="lo-si">
@@ -92,14 +92,61 @@
                             <p>Buy</p>
                         </span>
                         <span id = "cart">
-                            <img src="Icons/shopping-cart-add.png" alt="cart">
-                            <p>Add to cart</p>
+                            <img src="Icons/empty-cart.png" alt="cart">
+                            <p>Remove</p>
                         </span>
                     </div>
                 </div>
             </div>
         </div> -->
+
     </main>
+
+    <!-- <div class="expand-card">
+        <div class="big-card">
+            <div class="book-pic">
+                <img src="Images/books.png" alt="book" />
+            </div>
+            <div class="det">
+                <div class="close">
+                    <p>Name of the book</p>
+                    <img src="Icons/close.png" alt="close">
+                </div>
+                <div class="para">
+                    <p>
+                        The book had appeared on the old library shelf as if it had grown there overnight, 
+                        its faded green cover whispering of hidden adventures. No author was listed, and 
+                        the title—The Clockmaker's Whispers—was embossed in gold that shimmered oddly in 
+                        dim light. Anyone who picked it up claimed the pages felt warm, almost alive, and 
+                        the story inside seemed to shift each time it was read. Some said the book chose its 
+                        reader, revealing different truths to different hands, while others insisted it was 
+                        merely an eccentric relic. But everyone agreed on one thing: once you opened it, it 
+                        was almost impossible to put it down.
+                    </p>
+                </div>
+                <div class="cat-pri">
+                    <pre>Category   <p>Horror</p></pre>
+                    <pre>Price   <p>$500</p></pre>
+                </div>
+                <div class="search-with-cat">
+                    <span>
+                        <p>Search books this category</p>
+                        <img src="Icons/right-arrow.png" alt="">
+                    </span>
+                </div>
+                <div class="impt-bttn-1">
+                    <span id = "buy">
+                        <img src="Icons/shopping-bag.png" alt="buy">
+                        <p>Buy</p>
+                    </span>
+                    <span id = "rcart">
+                        <img src="Icons/empty-cart.png" alt="cart">
+                        <p>Remove</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
     <script src="script.js"></script>
 </body>
